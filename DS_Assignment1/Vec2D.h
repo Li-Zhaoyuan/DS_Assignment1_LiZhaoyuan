@@ -7,7 +7,7 @@ public:
 	Vec2D();
 	Vec2D(double x, double y);
 	virtual ~Vec2D();
-private:
+
 	double x;
 	double y;
 };

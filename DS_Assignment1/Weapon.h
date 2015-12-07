@@ -1,7 +1,9 @@
 #ifndef WEAPON_H_
 #define WEAPON_H_
 
-class Weapon
+#include "Item.h"
+
+class Weapon : public Item
 {
 public:
 	Weapon(const string& kName, const int& durability_, const int& kAttackDmg);
