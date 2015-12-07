@@ -5,11 +5,13 @@ class Vec2D
 {
 public:
 	Vec2D();
-	Vec2D(double x, double y);
+	Vec2D(double x = 0, double y = 0) : x(x), y(y){};
 	virtual ~Vec2D();
 
 	double x;
 	double y;
+
+	
 };
 
 #endif
