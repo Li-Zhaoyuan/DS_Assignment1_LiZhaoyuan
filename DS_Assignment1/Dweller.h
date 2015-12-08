@@ -20,8 +20,8 @@ public:
 	void recieveHealthDamage(const int& health_);
 	void recieveRadDamage(const int& radiation_);
 	void recieveEquipmentDamage(const int& durability_);
-	void addStimpak(const int& stimpak);
-	void addRadaway(const int& radaway);
+	void addStimpak(const int& stimpak_);
+	void addRadaway(const int& radaway_);
 	void useStimpak();
 	void useRadAway();
 	Outfit* assignOutfits(Outfit* outfit_);

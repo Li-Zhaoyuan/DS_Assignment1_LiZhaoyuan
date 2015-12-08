@@ -6,7 +6,7 @@ struct Vec2D
 public:
 	Vec2D();
 	Vec2D(double x, double y ) ;
-	virtual ~Vec2D();
+	//virtual ~Vec2D();
 
 	
 	double x;

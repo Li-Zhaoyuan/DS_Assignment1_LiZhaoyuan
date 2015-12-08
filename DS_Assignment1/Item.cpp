@@ -16,3 +16,8 @@ const int Item::getDurability()
 	return durability_;
 }
 
+//void Item::recieveDamage(const int& durability_)
+//{
+//
+//}
+
