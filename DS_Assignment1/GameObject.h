@@ -10,10 +10,10 @@ class GameObject
 public:
 	virtual ~GameObject();
 	string getName();
-	int getCount();
+	static int getCount();
 private:
 	string kName;
-	int count_;
+	static int count_;
 protected:
 	GameObject(const string kName);
 };

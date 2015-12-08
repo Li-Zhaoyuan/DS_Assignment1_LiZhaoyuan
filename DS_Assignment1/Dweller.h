@@ -9,7 +9,7 @@
 class Dweller : public GameObject
 {
 public:
-	Dweller(const string& kName, const int& SPECIAL_);
+	Dweller(const string& kName, const int& SPECIAL_ = 0);
 	virtual ~Dweller();
 	const int getSPECIAL();
 	const int getCurrentHealth();
@@ -30,14 +30,14 @@ public:
 	
 private:
 	//Vec2D position_();
-	Vec2D position_ ;
-	int SPECIAL_ = 0;
-	int health_ = 100;
-	int radiation_ = 0;
-	int stimpak_ = 0;
-	int radaway_ = 0;
-	Outfit* outfit_ = 0;
-	Weapon* weapon_ = 0;
+	Vec2D position_;
+	int SPECIAL_;
+	int health_ ;
+	int radiation_;
+	int stimpak_;
+	int radaway_;
+	Outfit* outfit_;
+	Weapon* weapon_;
 
 
 };
