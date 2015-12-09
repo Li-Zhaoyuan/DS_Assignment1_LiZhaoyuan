@@ -15,7 +15,23 @@ Dweller::~Dweller()
 
 const int Dweller::getSPECIAL()
 {
-	return SPECIAL_;
+	int SPECIALvalue;
+	int totalSPECIALvalue;
+	int outfitSPECIALvalue = outfit_->getSPECIAL();
+	for (int valuePosition = 10, valuePosition2 = 1; valuePosition > 10000000; valuePosition *= 10, valuePosition2 *= 10)
+	{
+		SPECIALvalue=SPECIAL_%valuePosition;
+		SPECIALvalue /= valuePosition;
+		outfitSPECIALvalue = outfit_->getSPECIAL() % valuePosition;
+		outfitSPECIALvalue /= valuePosition;
+		SPECIALvalue += outfitSPECIALvalue;
+		if (SPECIALvalue > 9)
+		{
+			SPECIALvalue = 9;
+		}
+		totalSPECIALvalue = SPECIALvalue*valuePosition2;
+	}
+	return totalSPECIALvalue;
 }
 
 const int Dweller::getCurrentHealth()
