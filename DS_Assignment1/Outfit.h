@@ -9,9 +9,10 @@ public:
 	Outfit(const string& kName, const int& durability_, const int& kSPECIAL);
 	virtual ~Outfit();
 	const int getSPECIAL();
+	virtual void receiveDamage(const int& damage);
 
 private:
-	const int kSPECIAL;
+	const int kSPECIAL ;
 };
 
 #endif

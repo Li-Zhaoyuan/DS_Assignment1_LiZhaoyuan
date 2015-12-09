@@ -15,3 +15,8 @@ const int Weapon::getAttackDmg()
 {
 	return kAttackDmg;
 }
+
+void Weapon::receiveDamage(const int& damage)
+{
+	durability_ -= damage;
+}

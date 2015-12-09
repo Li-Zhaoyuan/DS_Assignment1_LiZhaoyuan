@@ -9,7 +9,19 @@ using std::endl;
 #include "GameObject.h"
 #include "Vec2D.h"
 
-void main()
+void testNames();
+void shouldNotCompile();
+
+int main()
 {
-	cout << "hi" << endl;
+	testNames();
+	shouldNotCompile();
+
+	Dweller d("One", 5555555);
+	Outfit o("Outfit", 0, 1234567);
+	cout << d.getSPECIAL() << endl;
+	d.assignOutfit(&o);
+	cout << d.getSPECIAL() << endl;
+
+	return 0;
 }

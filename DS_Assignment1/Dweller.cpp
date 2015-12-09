@@ -5,7 +5,6 @@ Dweller::Dweller(const string& kName, const int& SPECIAL_)
 health_(100), radiation_(0), stimpak_(0), radaway_(0), outfit_(0),
 weapon_(0)
 {
-	
 }
 
 Dweller::~Dweller()
@@ -49,20 +48,20 @@ const Vec2D Dweller::getPosition()
 	return position_;
 }
 
-void Dweller::recieveHealthDamage(const int& health_)
+void Dweller::receiveHealthDamage(const int& health_)
 {
 	this->health_ -= health_;
 }
 
-void Dweller::recieveRadDamage(const int& radiation_)
+void Dweller::receiveRadDamage(const int& radiation_)
 {
 	health_ -= radiation_;
 }
 
-void Dweller::recieveEquipmentDamage(const int& durability_)
+void Dweller::receiveEquipmentDamage(const int& durability_)
 {
-	outfit_->recieveDamage(durability_) ;
-	weapon_->recieveDamage(durability_);
+	outfit_->receiveDamage(durability_);
+	weapon_->receiveDamage(durability_);
 }
 
 void Dweller::addStimpak(const int& stimpak_)
@@ -70,29 +69,77 @@ void Dweller::addStimpak(const int& stimpak_)
 	this->stimpak_ += stimpak_;
 }
 
-void Dweller::addRadaway(const int& radaway_)
+void Dweller::addRadAway(const int& radaway_)
 {
 	this->radaway_ += radaway_;
 }
 
 void Dweller::useStimpak()
 {
-	health_ += 20;
+	if (health_ != 100)
+	{
+		health_ += 20;
+		stimpak_ -= 1;
+		if (health_ > 100)
+		{
+			health_ = 100;
+		}
+	}
+	else
+	{
+		return;
+	}
 }
 
 void Dweller::useRadAway()
 {
-	radiation_ -= 10;
+	if (radaway_ != 0)
+	{
+		if (radiation_ > 0)
+		{
+			radaway_ -= 1;
+			radiation_ -= 10;
+		}
+		if (radiation_ < 0)
+		{
+			radiation_ = 0;
+		}
+	}
+	else
+	{
+		return;
+	}
 }
 
-Outfit* Dweller::assignOutfits(Outfit* outfit_)
+Outfit* Dweller::assignOutfit(Outfit* outfit_)
 {
-	this->outfit_ = outfit_;
+	if (isDead() == false)//the dweller must be alive to assign an outfit
+	{
+		delete this->outfit_;//delete previus outfit
+		this->outfit_ = new Outfit(outfit_->getName(), outfit_->getDurability(), outfit_->getSPECIAL());
+		return this->outfit_;
+	}
+	else
+	{
+		this->outfit_ = 0;
+		return this->outfit_;
+	}
 }
 
 Weapon* Dweller::assignWeapon(Weapon* weapon_)
 {
-	this->weapon_ = weapon_;
+	if (isDead() == false)//the dweller must be alive to assign an outfit
+	{
+		delete this->weapon_; //delete previous weapon
+		this->weapon_ = new Weapon(weapon_->getName(), weapon_->getDurability(), weapon_->getAttackDmg());
+		return this->weapon_;
+	}
+	else
+	{
+		this->weapon_ = 0;
+		return this->weapon_;
+	}
+	
 }
 
 bool Dweller::isDead()

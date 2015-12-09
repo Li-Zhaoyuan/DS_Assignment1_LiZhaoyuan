@@ -9,6 +9,7 @@ public:
 	Weapon(const string& kName, const int& durability_, const int& kAttackDmg);
 	virtual ~Weapon();
 	const int getAttackDmg();
+	virtual void receiveDamage(const int& damage);
 private:
 	const int kAttackDmg;
 };
