@@ -15,23 +15,30 @@ Dweller::~Dweller()
 
 const int Dweller::getSPECIAL()
 {
-	int SPECIALvalue;
-	int totalSPECIALvalue;
-	int outfitSPECIALvalue = outfit_->getSPECIAL();
-	for (int valuePosition = 10, valuePosition2 = 1; valuePosition > 10000000; valuePosition *= 10, valuePosition2 *= 10)
+	if (outfit_ != 0 && outfit_->getDurability() > 0)
 	{
-		SPECIALvalue=SPECIAL_%valuePosition;
-		SPECIALvalue /= valuePosition;
-		outfitSPECIALvalue = outfit_->getSPECIAL() % valuePosition;
-		outfitSPECIALvalue /= valuePosition;
-		SPECIALvalue += outfitSPECIALvalue;
-		if (SPECIALvalue > 9)
+		int SPECIALvalue=0;
+		int totalSPECIALvalue=0;
+		int outfitSPECIALvalue = outfit_->getSPECIAL();
+		for (int valuePosition = 10, valuePosition2 = 1; valuePosition > 10000000; valuePosition *= 10, valuePosition2 *= 10)
 		{
-			SPECIALvalue = 9;
+			SPECIALvalue = SPECIAL_%valuePosition;
+			SPECIALvalue /= valuePosition;
+			outfitSPECIALvalue = outfit_->getSPECIAL() % valuePosition;
+			outfitSPECIALvalue /= valuePosition;
+			SPECIALvalue += outfitSPECIALvalue;
+			if (SPECIALvalue > 9)
+			{
+				SPECIALvalue = 9;
+			}
+			totalSPECIALvalue = SPECIALvalue*valuePosition2;
 		}
-		totalSPECIALvalue = SPECIALvalue*valuePosition2;
+		return totalSPECIALvalue;
 	}
-	return totalSPECIALvalue;
+	else
+	{
+		return SPECIAL_;
+	}
 }
 
 const int Dweller::getCurrentHealth()
@@ -50,7 +57,10 @@ const int Dweller::getAttackDmg()
 	{
 		return weapon_->getAttackDmg();
 	}
-	return 1;
+	else
+	{
+		return 1;
+	}
 }
 
 void Dweller::setPosition(const Vec2D& position_)
@@ -76,8 +86,14 @@ void Dweller::receiveRadDamage(const int& radiation_)
 
 void Dweller::receiveEquipmentDamage(const int& durability_)
 {
-	outfit_->receiveDamage(durability_);
-	weapon_->receiveDamage(durability_);
+	if (outfit_ != 0)
+	{
+		outfit_->receiveDamage(durability_);
+	}
+	if (weapon_ != 0)
+	{
+		weapon_->receiveDamage(durability_);
+	}
 }
 
 void Dweller::addStimpak(const int& stimpak_)
