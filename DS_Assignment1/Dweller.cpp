@@ -17,21 +17,19 @@ const int Dweller::getSPECIAL()
 {
 	if (outfit_ != 0 && outfit_->getDurability() > 0)
 	{
-		int SPECIALvalue=0;
+		int SPECIALvalue= SPECIAL_;
 		int totalSPECIALvalue=0;
 		int outfitSPECIALvalue = outfit_->getSPECIAL();
-		for (int valuePosition = 10, valuePosition2 = 1; valuePosition > 10000000; valuePosition *= 10, valuePosition2 *= 10)
+		for (int position = 1000000; position >= 1; position /= 10)
 		{
-			SPECIALvalue = SPECIAL_%valuePosition;
-			SPECIALvalue /= valuePosition;
-			outfitSPECIALvalue = outfit_->getSPECIAL() % valuePosition;
-			outfitSPECIALvalue /= valuePosition;
+			SPECIALvalue = (SPECIAL_ / position)-((SPECIAL_/(position*10))*10);
+			outfitSPECIALvalue = (outfit_->getSPECIAL() / position) - ((outfit_->getSPECIAL() / (position * 10))*10);
 			SPECIALvalue += outfitSPECIALvalue;
 			if (SPECIALvalue > 9)
 			{
 				SPECIALvalue = 9;
 			}
-			totalSPECIALvalue = SPECIALvalue*valuePosition2;
+			totalSPECIALvalue += SPECIALvalue*position;
 		}
 		return totalSPECIALvalue;
 	}
@@ -166,11 +164,7 @@ Weapon* Dweller::assignWeapon(Weapon* weapon_)
 		this->weapon_ = new Weapon(weapon_->getName(), weapon_->getDurability(), weapon_->getAttackDmg());
 		return this->weapon_;
 	}
-	else
-	{
-		this->weapon_ = 0;
-		return this->weapon_;
-	}
+	return this->weapon_;
 	
 }
 
