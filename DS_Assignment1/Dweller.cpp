@@ -79,6 +79,7 @@ void Dweller::receiveHealthDamage(const int& health_)
 
 void Dweller::receiveRadDamage(const int& radiation_)
 {
+	this->radiation_ += radiation_;
 	health_ -= radiation_;
 }
 
