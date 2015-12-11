@@ -91,7 +91,7 @@ void Dweller::receiveEquipmentDamage(const int& durability_)
 	}
 	if (weapon_ != 0)
 	{
-		weapon_->receiveDamage(durability_);
+		weapon_->receiveDamage(durability_/2);
 	}
 }
 
