@@ -80,7 +80,7 @@ void Dweller::receiveHealthDamage(const int& health_)
 void Dweller::receiveRadDamage(const int& radiation_)
 {
 	this->radiation_ += radiation_;
-	health_ -= radiation_;
+	health_ -= this->radiation_;
 }
 
 void Dweller::receiveEquipmentDamage(const int& durability_)
@@ -107,7 +107,7 @@ void Dweller::addRadAway(const int& radaway_)
 
 void Dweller::useStimpak()
 {
-	if (health_ != 100)
+	if (stimpak_ != 0)
 	{
 		health_ += 20;
 		stimpak_ -= 1;
