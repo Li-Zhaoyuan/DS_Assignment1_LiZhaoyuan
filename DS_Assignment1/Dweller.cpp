@@ -74,13 +74,19 @@ const Vec2D Dweller::getPosition()
 
 void Dweller::receiveHealthDamage(const int& health_)
 {
-	this->health_ -= health_;
+	if (isDead() != true)
+	{
+		this->health_ -= health_;
+	}
 }
 
 void Dweller::receiveRadDamage(const int& radiation_)
 {
-	this->radiation_ += radiation_;
-	health_ -= this->radiation_;
+	if (isDead() != true)
+	{
+		this->radiation_ += radiation_;
+		health_ -= this->radiation_;
+	}
 }
 
 void Dweller::receiveEquipmentDamage(const int& durability_)
@@ -107,13 +113,16 @@ void Dweller::addRadAway(const int& radaway_)
 
 void Dweller::useStimpak()
 {
-	if (stimpak_ != 0)
+	if (isDead() != true)
 	{
-		health_ += 20;
-		stimpak_ -= 1;
-		if (health_ > 100)
+		if (stimpak_ != 0)
 		{
-			health_ = 100;
+			health_ += 20;
+			stimpak_ -= 1;
+			if (health_ > 100)
+			{
+				health_ = 100;
+			}
 		}
 	}
 	else
@@ -124,16 +133,19 @@ void Dweller::useStimpak()
 
 void Dweller::useRadAway()
 {
-	if (radaway_ != 0)
+	if (isDead() != true)
 	{
-		if (radiation_ > 0)
+		if (radaway_ != 0)
 		{
-			radaway_ -= 1;
-			radiation_ -= 10;
-		}
-		if (radiation_ < 0)
-		{
-			radiation_ = 0;
+			if (radiation_ > 0)
+			{
+				radaway_ -= 1;
+				radiation_ -= 10;
+			}
+			if (radiation_ < 0)
+			{
+				radiation_ = 0;
+			}
 		}
 	}
 	else
@@ -144,29 +156,30 @@ void Dweller::useRadAway()
 
 Outfit* Dweller::assignOutfit(Outfit* outfit_)
 {
-	if (isDead() == false)//the dweller must be alive to assign an outfit
+	if (isDead() == false)
 	{
-		delete this->outfit_;//delete previus outfit
+		delete this->outfit_;
 		this->outfit_ = new Outfit(outfit_->getName(), outfit_->getDurability(), outfit_->getSPECIAL());
 		return this->outfit_;
 	}
 	else
 	{
-		this->outfit_ = 0;
 		return this->outfit_;
 	}
 }
 
 Weapon* Dweller::assignWeapon(Weapon* weapon_)
 {
-	if (isDead() == false)//the dweller must be alive to assign an outfit
+	if (isDead() == false)
 	{
-		delete this->weapon_; //delete previous weapon
+		delete this->weapon_; 
 		this->weapon_ = new Weapon(weapon_->getName(), weapon_->getDurability(), weapon_->getAttackDmg());
 		return this->weapon_;
 	}
-	return this->weapon_;
-	
+	else
+	{
+		return this->weapon_;
+	}
 }
 
 bool Dweller::isDead()
