@@ -1,5 +1,5 @@
-#ifndef GAME_OBJECT_H_
-#define GAME_OBJECT_H_
+#ifndef GAMEOBJECT_H_
+#define GAMEOBJECT_H_
 
 #include <string>
 
