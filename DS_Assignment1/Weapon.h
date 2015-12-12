@@ -1,8 +1,23 @@
+/****************************************************************************/
+/*!
+\file Weapon.h
+\author Li Zhaoyuan
+\par email: 150592K@mymail.nyp.edu.sg
+\brief
+A class to define Weapon class.
+*/
+/****************************************************************************/
+
 #ifndef WEAPON_H_
 #define WEAPON_H_
 
 #include "Item.h"
-
+/****************************************************************************/
+/*!
+Class Weapon:
+\brief Derives from Item class. Defines Weapon's variables and methods
+*/
+/****************************************************************************/
 class Weapon : public Item
 {
 public:

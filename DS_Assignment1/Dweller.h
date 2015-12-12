@@ -1,3 +1,14 @@
+/****************************************************************************/
+/*!
+\file Dweller.h
+\author Li Zhaoyuan
+\par email: 150592K@mymail.nyp.edu.sg
+\brief
+Contain a class to define a dweller.
+*/
+/****************************************************************************/
+
+
 #ifndef DWELLER_H_
 #define DWELLER_H_
 
@@ -5,7 +16,12 @@
 #include "Vec2D.h"
 #include "Outfit.h"
 #include "Weapon.h"
-
+/****************************************************************************/
+/*!
+Class Dweller:
+\brief Derives from GameObject class. Defines Dweller variables and method.
+*/
+/****************************************************************************/
 class Dweller : public GameObject
 {
 public:
