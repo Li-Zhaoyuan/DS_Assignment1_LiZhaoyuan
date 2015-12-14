@@ -1,0 +1,9 @@
+<map id="DS_Assignment1/Item.h" name="DS_Assignment1/Item.h">
+<area shape="rect" id="node2" href="$Outfit_8h.html" title="Contain a class to define an Outfit. " alt="" coords="116,80,285,107"/>
+<area shape="rect" id="node6" href="$Weapon_8h.html" title="Contain a class to define Weapon. " alt="" coords="310,80,497,107"/>
+<area shape="rect" id="node8" href="$Item_8cpp.html" title="DS_Assignment1/Item.cpp" alt="" coords="521,80,699,107"/>
+<area shape="rect" id="node3" href="$Dweller_8h.html" title="Contain a class to define a Dweller. " alt="" coords="212,155,392,181"/>
+<area shape="rect" id="node5" href="$Outfit_8cpp.html" title="DS_Assignment1/Outfit.cpp" alt="" coords="5,155,188,181"/>
+<area shape="rect" id="node4" href="$Dweller_8cpp.html" title="DS_Assignment1/Dweller.cpp" alt="" coords="205,229,399,256"/>
+<area shape="rect" id="node7" href="$Weapon_8cpp.html" title="DS_Assignment1/Weapon.cpp" alt="" coords="417,155,617,181"/>
+</map>

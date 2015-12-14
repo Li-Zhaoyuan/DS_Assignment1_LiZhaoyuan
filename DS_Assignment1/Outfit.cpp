@@ -3,8 +3,9 @@
 /*!
 \brief
 Initialize Item and kSpecial.
-\param rhs
-kName of outfit ,durability of outfit, Special of the outfit.
+\param kName - name of outfit 
+\param durability_ - durability of outfit
+\param kSPECIAL - Special of the outfit.
 \return
 void
 */
@@ -42,8 +43,7 @@ const int Outfit::getSPECIAL()
 /*!
 \brief
 change durability based on damage dealt.
-\param rhs
-damage dealt
+\param damage - damage dealt to durability
 \return
 void
 */

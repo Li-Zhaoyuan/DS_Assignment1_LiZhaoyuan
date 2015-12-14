@@ -4,8 +4,8 @@
 \brief
 Initialize GameObject, position_, SPECIAL_, health_, radiation_, stimpak_,
 radaway_,outfit_ and weapon_.
-\param rhs
-name of dweller, dweller's SPECIAL_
+\param kName - name of dweller
+\param SPECIAL_ - dweller's SPECIAL_
 \return
 void
 */
@@ -33,10 +33,9 @@ Dweller::~Dweller()
 /*!
 \brief
 getter to get SPECIAL total value.
-\exception 
-with and without outfit
+
 \return
-totalSpecialValue or SPECIAL_
+dweller's SPECIAL_ or dweller's SPECIAL added with its outfit's special value
 */
 /****************************************************************************/
 const int Dweller::getSPECIAL()
@@ -69,7 +68,7 @@ const int Dweller::getSPECIAL()
 \brief
 getter to get the amount of health the dweller have.
 \return
-health_
+ current health of dweller
 */
 /****************************************************************************/
 const int Dweller::getCurrentHealth()
@@ -81,7 +80,7 @@ const int Dweller::getCurrentHealth()
 \brief
 getter to get current amount of radiation the dweller have.
 \return
-radiation_
+current radiation value for dweller
 */
 /****************************************************************************/
 const int Dweller::getCurrentRadDamage()
@@ -91,11 +90,10 @@ const int Dweller::getCurrentRadDamage()
 /****************************************************************************/
 /*!
 \brief
-Initialize kName and increasing the count when objects of this type isinstantiated
-\param rhs
-Object's Name
+getter to get attack damage of dweller with or without weapon
+
 \return
-void
+total attack damage witho or without weapon
 */
 /****************************************************************************/
 const int Dweller::getAttackDmg()
@@ -113,8 +111,7 @@ const int Dweller::getAttackDmg()
 /*!
 \brief
 setter to set the position of the dweller
-\param rhs
-coordinate x and y
+\param position_ - coordinate x and y
 \return
 void
 */
@@ -127,11 +124,10 @@ void Dweller::setPosition(const Vec2D& position_)
 /****************************************************************************/
 /*!
 \brief
-setter to set the position of the dweller
-\param rhs
-coordinate x and y
+getter to get the position of the dweller
+
 \return
-void
+position of dweller
 */
 /****************************************************************************/
 const Vec2D Dweller::getPosition()
@@ -142,10 +138,8 @@ const Vec2D Dweller::getPosition()
 /*!
 \brief
 receiver to decrease health  based on the value passed in by parameter.
-\param rhs
-damage to health
-\return
-void
+\param health_ - damage to health
+\return void
 */
 /****************************************************************************/
 void Dweller::receiveHealthDamage(const int& health_)
@@ -159,8 +153,7 @@ void Dweller::receiveHealthDamage(const int& health_)
 /*!
 \brief
 receiver to increase radiation value and decrease health based on radiation
-\param rhs
-radiation
+\param radiation_ - amount of radiation received
 \return
 void
 */
@@ -177,8 +170,7 @@ void Dweller::receiveRadDamage(const int& radiation_)
 /*!
 \brief
 receiver to decrease the durability value of outfit and weapon
-\param rhs
-damage to durability
+\param durability_ - damage to durability
 \return
 void
 */
@@ -198,8 +190,7 @@ void Dweller::receiveEquipmentDamage(const int& durability_)
 /*!
 \brief
 adds to the total amount of stimpak
-\param rhs
-amount of stimpak to be added
+\param stimpak_ - amount of stimpak to be added
 \return
 void
 */
@@ -212,8 +203,7 @@ void Dweller::addStimpak(const int& stimpak_)
 /*!
 \brief
 adds the amount of radaway
-\param rhs
-amount of radaway to be added
+\param radaway_ - amount of radaway to be added
 \return
 void
 */
@@ -283,8 +273,7 @@ void Dweller::useRadAway()
 /*!
 \brief
 assign outfit_ with new Outfit
-\exception 
-only assign outfit when dweller is alive
+\param outfit_ - Outfit
 \return
 outfit_
 */
@@ -306,8 +295,7 @@ Outfit* Dweller::assignOutfit(Outfit* outfit_)
 /*!
 \brief
 assign weapon_ with new weapon
-\exception
-only if the dweller is still alive
+
 \return
 weapon_
 */
@@ -329,8 +317,7 @@ Weapon* Dweller::assignWeapon(Weapon* weapon_)
 /*!
 \brief
 ister to determine if the dweller is alive or not.
-\exception
-when health is above 0 or less then 0
+
 \return
 true/false
 */

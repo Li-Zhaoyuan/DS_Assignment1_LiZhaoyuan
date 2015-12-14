@@ -4,7 +4,7 @@
 \author Li Zhaoyuan
 \par email: 150592K@mymail.nyp.edu.sg
 \brief
-Contain a class to define an item.
+Contain a class to define an Item.
 */
 /****************************************************************************/
 
@@ -17,7 +17,8 @@ Contain a class to define an item.
 Class Item:
 \brief An abstract class. Defines an Item and its method
 */
-/****************************************************************************/
+/****************************************************************************/
+
 
 class Item : public GameObject
 {

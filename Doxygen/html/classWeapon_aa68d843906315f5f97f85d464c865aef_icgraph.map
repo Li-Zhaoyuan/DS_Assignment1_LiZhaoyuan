@@ -1,0 +1,4 @@
+<map id="Weapon::getAttackDmg" name="Weapon::getAttackDmg">
+<area shape="rect" id="node2" href="$classDweller.html#a7b91202ae3cb605550167e1eeb58ebb6" title="assign weapon_ with new weapon " alt="" coords="215,5,373,32"/>
+<area shape="rect" id="node3" href="$classDweller.html#a7bb025bd8237c76efc510c603334906f" title="getter to get attack damage of dweller with or without weapon " alt="" coords="217,56,371,83"/>
+</map>

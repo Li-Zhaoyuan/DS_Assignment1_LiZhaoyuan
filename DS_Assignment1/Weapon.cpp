@@ -3,8 +3,9 @@
 /*!
 \brief
 Initialize Item and kAttackDmg.
-\param rhs
-Item's Name, Item's durability and Item's attackDmg
+\param kName - Item's Name
+\param durability_ - Item's durability 
+\param kAttackDmg - Item's attackDmg
 \return
 void
 */
@@ -42,8 +43,9 @@ const int Weapon::getAttackDmg()
 /*!
 \brief
 receiver to change durability value based on half the damage dealt
-\param rhs
-damage dealt
+\param damage - damage dealt to durability
+\exception
+when damage taken is 1, it does not decrease durability.
 \return
 void
 */

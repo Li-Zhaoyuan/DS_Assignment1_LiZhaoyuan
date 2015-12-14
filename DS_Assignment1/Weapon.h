@@ -4,7 +4,7 @@
 \author Li Zhaoyuan
 \par email: 150592K@mymail.nyp.edu.sg
 \brief
-A class to define Weapon class.
+Contain a class to define Weapon.
 */
 /****************************************************************************/
 

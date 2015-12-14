@@ -1,0 +1,8 @@
+<map id="Dweller::isDead" name="Dweller::isDead">
+<area shape="rect" id="node2" href="$classDweller.html#a5b95803dcefe3b63ed7a9506504cae6f" title="assign outfit_ with new Outfit " alt="" coords="193,5,335,32"/>
+<area shape="rect" id="node3" href="$classDweller.html#a7b91202ae3cb605550167e1eeb58ebb6" title="assign weapon_ with new weapon " alt="" coords="185,56,343,83"/>
+<area shape="rect" id="node4" href="$classDweller.html#ac16ee22d0c68897c67a2ce04dd253a17" title="receiver to decrease health based on the value passed in by parameter. " alt="" coords="165,107,363,133"/>
+<area shape="rect" id="node5" href="$classDweller.html#a149aff3bc8f4f3e3e969178631bb598b" title="receiver to increase radiation value and decrease health based on radiation " alt="" coords="173,157,355,184"/>
+<area shape="rect" id="node6" href="$classDweller.html#ad76a3cd483840971553a615ceba34b5f" title="decreases number of radaway to decrease radiation " alt="" coords="190,208,338,235"/>
+<area shape="rect" id="node7" href="$classDweller.html#a141c51a497020e45f3d1bf61c6f50167" title="decreases amount of stimpak to increase health " alt="" coords="193,259,335,285"/>
+</map>

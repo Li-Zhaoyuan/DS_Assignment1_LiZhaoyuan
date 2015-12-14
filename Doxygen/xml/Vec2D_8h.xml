@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="Vec2D_8h" kind="file" language="C++">
+    <compoundname>Vec2D.h</compoundname>
+    <includedby refid="Dweller_8h" local="yes">DS_Assignment1/Dweller.h</includedby>
+    <includedby refid="Vec2D_8cpp" local="yes">DS_Assignment1/Vec2D.cpp</includedby>
+    <invincdepgraph>
+      <node id="156">
+        <label>DS_Assignment1/Vec2D.h</label>
+        <link refid="Vec2D.h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>DS_Assignment1/Vec2D.cpp</label>
+        <link refid="Vec2D_8cpp"/>
+      </node>
+      <node id="157">
+        <label>DS_Assignment1/Dweller.h</label>
+        <link refid="Dweller_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>DS_Assignment1/Dweller.cpp</label>
+        <link refid="Dweller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structVec2D" prot="public">Vec2D</innerclass>
+    <briefdescription>
+<para>Contain a struct to define <ref refid="structVec2D" kindref="compound">Vec2D</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Li Zhaoyuan </para></simplesect>
+<simplesect kind="par"><title>email: 150592K.nyp.edu.sg</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VEC2D_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VEC2D_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structVec2D" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structVec2D" kindref="compound">Vec2D</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVec2D_1aa3e3abb842bff81c10e8539c1689d578" kindref="member">Vec2D</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVec2D_1aa3e3abb842bff81c10e8539c1689d578" kindref="member">Vec2D</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structVec2D_1a9a4542122d7f2bd28dcd529c9a62edd0" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structVec2D_1ace79aa38b9f696905862d607f338b845" kindref="member">y</ref><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>~Vec2D();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="structVec2D_1a9a4542122d7f2bd28dcd529c9a62edd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structVec2D_1a9a4542122d7f2bd28dcd529c9a62edd0" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structVec2D_1ace79aa38b9f696905862d607f338b845" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structVec2D_1ace79aa38b9f696905862d607f338b845" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="DS_Assignment1/Vec2D.h"/>
+  </compounddef>
+</doxygen>

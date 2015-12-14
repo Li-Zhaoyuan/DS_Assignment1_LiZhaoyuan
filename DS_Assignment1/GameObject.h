@@ -4,9 +4,10 @@
 \author Li Zhaoyuan
 \par email: 150592K@mymail.nyp.edu.sg
 \brief
-A class to store name and number of objects.
+Contain a class to define a GameObject.
 */
-/****************************************************************************/
+/****************************************************************************/
+
 
 #ifndef GAMEOBJECT_H_
 #define GAMEOBJECT_H_
@@ -20,7 +21,8 @@ using std::string;
 Class GameObject:
 \brief An abstract class. Defines its variables and method.
 */
-/****************************************************************************/
+/****************************************************************************/
+
 
 class GameObject
 {

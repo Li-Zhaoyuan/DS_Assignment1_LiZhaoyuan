@@ -4,7 +4,7 @@
 \author Li Zhaoyuan
 \par email: 150592K@mymail.nyp.edu.sg
 \brief
-Contain a class to define a dweller.
+Contain a class to define a Dweller.
 */
 /****************************************************************************/
 

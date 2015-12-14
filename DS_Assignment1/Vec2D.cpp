@@ -16,8 +16,8 @@ Vec2D::Vec2D()
 /*!
 \brief
 Initialize x and y based on the position of the dweller.
-\param rhs
-position x, position y.
+\param x - position x
+\param y - position y
 \return
 void
 */

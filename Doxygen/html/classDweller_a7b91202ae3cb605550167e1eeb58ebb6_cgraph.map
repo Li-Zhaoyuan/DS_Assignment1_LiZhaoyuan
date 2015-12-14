@@ -1,0 +1,6 @@
+<map id="Dweller::assignWeapon" name="Dweller::assignWeapon">
+<area shape="rect" id="node2" href="$classWeapon.html#aa68d843906315f5f97f85d464c865aef" title="getter to get weapon&#39;s attack damage. " alt="" coords="212,5,373,32"/>
+<area shape="rect" id="node3" href="$classItem.html#a26396e7bd1be4d8ab3590dfac9cbca39" title="getter to get the value of durability " alt="" coords="229,56,356,83"/>
+<area shape="rect" id="node4" href="$classGameObject.html#aa23844466cf7920f57db46666464b3f0" title="Returns name of the object, getter. " alt="" coords="215,107,370,133"/>
+<area shape="rect" id="node5" href="$classDweller.html#a33bb050f8dd1abba8428d5824ce9725f" title="ister to determine if the dweller is alive or not. " alt="" coords="237,157,349,184"/>
+</map>

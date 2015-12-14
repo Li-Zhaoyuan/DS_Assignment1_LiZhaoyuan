@@ -4,7 +4,7 @@
 \author Li Zhaoyuan
 \par email: 150592K@mymail.nyp.edu.sg
 \brief
-Struct to define position coordinates x and y.
+Contain a struct to define Vec2D.
 */
 /****************************************************************************/
 

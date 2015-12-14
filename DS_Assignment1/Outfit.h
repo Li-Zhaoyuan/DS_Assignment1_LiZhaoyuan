@@ -4,7 +4,7 @@
 \author Li Zhaoyuan
 \par email: 150592K@mymail.nyp.edu.sg
 \brief
-A class to define an Outfit.
+Contain a class to define an Outfit.
 */
 /****************************************************************************/
 
@@ -17,7 +17,8 @@ A class to define an Outfit.
 Class Outfit:
 \brief Derives from Item class. Defines Outfit's variable and its method.
 */
-/****************************************************************************/
+/****************************************************************************/
+
 class Outfit: public Item
 {
 public:

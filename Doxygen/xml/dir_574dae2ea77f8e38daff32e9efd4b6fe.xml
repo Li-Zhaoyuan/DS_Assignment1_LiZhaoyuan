@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_574dae2ea77f8e38daff32e9efd4b6fe" kind="dir">
+    <compoundname>DS_Assignment1</compoundname>
+    <innerfile refid="Dweller_8cpp">Dweller.cpp</innerfile>
+    <innerfile refid="Dweller_8h">Dweller.h</innerfile>
+    <innerfile refid="GameObject_8cpp">GameObject.cpp</innerfile>
+    <innerfile refid="GameObject_8h">GameObject.h</innerfile>
+    <innerfile refid="Item_8cpp">Item.cpp</innerfile>
+    <innerfile refid="Item_8h">Item.h</innerfile>
+    <innerfile refid="Outfit_8cpp">Outfit.cpp</innerfile>
+    <innerfile refid="Outfit_8h">Outfit.h</innerfile>
+    <innerfile refid="Vec2D_8cpp">Vec2D.cpp</innerfile>
+    <innerfile refid="Vec2D_8h">Vec2D.h</innerfile>
+    <innerfile refid="Weapon_8cpp">Weapon.cpp</innerfile>
+    <innerfile refid="Weapon_8h">Weapon.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="DS_Assignment1/"/>
+  </compounddef>
+</doxygen>

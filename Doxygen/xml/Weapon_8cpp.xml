@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="Weapon_8cpp" kind="file" language="C++">
+    <compoundname>Weapon.cpp</compoundname>
+    <includes refid="Weapon_8h" local="yes">Weapon.h</includes>
+    <incdepgraph>
+      <node id="161">
+        <label>Weapon.h</label>
+        <link refid="Weapon_8h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>string</label>
+      </node>
+      <node id="160">
+        <label>DS_Assignment1/Weapon.cpp</label>
+        <link refid="Weapon.cpp"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>Item.h</label>
+        <link refid="Item_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>GameObject.h</label>
+        <link refid="GameObject_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Weapon_8h" kindref="compound">Weapon.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classWeapon_1add48cadf71ddfc52e78187ed9c696f01" refkind="member"><highlight class="normal"><ref refid="classWeapon_1add48cadf71ddfc52e78187ed9c696f01" kindref="member">Weapon::Weapon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>kName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>durability_,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>kAttackDmg)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">:<ref refid="classItem" kindref="compound">Item</ref>(kName,<sp/>durability_),<sp/>kAttackDmg(kAttackDmg)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classWeapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" refkind="member"><highlight class="normal"><ref refid="classWeapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" kindref="member">Weapon::~Weapon</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classWeapon_1aa68d843906315f5f97f85d464c865aef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWeapon_1aa68d843906315f5f97f85d464c865aef" kindref="member">Weapon::getAttackDmg</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classWeapon_1a0f219eb852ca4d385443dd9a7d2f0212" kindref="member">kAttackDmg</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classWeapon_1acfd2308fd6931b854a8c9d11e58de6c9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWeapon_1acfd2308fd6931b854a8c9d11e58de6c9" kindref="member">Weapon::receiveDamage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>damage)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1aa565c4091f6ac0634d762fb250128cee" kindref="member">durability_</ref><sp/>-=<sp/>(damage/2);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="DS_Assignment1/Weapon.cpp"/>
+  </compounddef>
+</doxygen>

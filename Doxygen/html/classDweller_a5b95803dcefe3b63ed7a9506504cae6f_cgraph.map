@@ -1,0 +1,6 @@
+<map id="Dweller::assignOutfit" name="Dweller::assignOutfit">
+<area shape="rect" id="node2" href="$classItem.html#a26396e7bd1be4d8ab3590dfac9cbca39" title="getter to get the value of durability " alt="" coords="209,5,335,32"/>
+<area shape="rect" id="node3" href="$classGameObject.html#aa23844466cf7920f57db46666464b3f0" title="Returns name of the object, getter. " alt="" coords="195,56,349,83"/>
+<area shape="rect" id="node4" href="$classOutfit.html#ac62f8f308ad5a60cee90a9bfa8d70d4e" title="getter to return special value of the outfit. " alt="" coords="205,107,339,133"/>
+<area shape="rect" id="node5" href="$classDweller.html#a33bb050f8dd1abba8428d5824ce9725f" title="ister to determine if the dweller is alive or not. " alt="" coords="216,157,328,184"/>
+</map>

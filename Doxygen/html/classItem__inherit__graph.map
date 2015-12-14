@@ -1,0 +1,5 @@
+<map id="Item" name="Item">
+<area shape="rect" id="node3" href="$classOutfit.html" title="Derives from Item class. Defines Outfit&#39;s variable and its method. " alt="" coords="5,155,59,181"/>
+<area shape="rect" id="node4" href="$classWeapon.html" title="Derives from Item class. Defines Weapon&#39;s variables and methods. " alt="" coords="83,155,154,181"/>
+<area shape="rect" id="node2" href="$classGameObject.html" title="An abstract class. Defines its variables and method. " alt="" coords="27,5,122,32"/>
+</map>
